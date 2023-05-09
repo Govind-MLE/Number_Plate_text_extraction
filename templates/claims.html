@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+       background-image:url("static/images/claim.png");
+                
+                
+        }
+    </style>
+    <title>Claim Management System</title>
+    <link rel="stylesheet" href="static\css\claims.css">
+    <!-- Add any CSS or JavaScript links, meta tags, or other head elements here -->
+</head>
+
+<body>
+    <!-- Add your claim management system content here -->
+    <h1>Claim Management System</h1>
+    <p>Welcome to our claim management system. Please fill out the form below to submit a claim.</p>
+    <!-- Add any additional content, such as claims history, status updates, etc. as needed -->
+    <center>
+    <h1>Text Extraction</h1>
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+    <form action="{{ url_for('detect_text') }}" method="post" enctype="multipart/form-data">
+        <label for="file">Select an image to detect text:</label>
+        <input type="file" name="file" id="file" accept=".png,.jpg,.jpeg,.gif,.jfif">
+        <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>

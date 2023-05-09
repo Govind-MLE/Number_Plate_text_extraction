@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <style>
+    body{
+      background-image: url("static/images/details.jfif");
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+    }
+  </style>
+  <head>
+    <title>Details for Number Plate</title>
+  </head>
+  <style>
+    .container {
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.5;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      border-color: black;
+      background-color: rgb(221, 217, 220);
+    }
+    h1{
+      text-align: center;
+    }
+    p {
+      border-bottom: 1px solid #1a1919;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      
+      
+    }
+    p:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 200px;
+      border-color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      
+      <h1>Vehicle details</h1>
+      <p>npermit_issued_by:{{ result['result']['npermit_issued_by'] }}</p>
+      <p>variant: {{ result['result']['variant'] }}</p>
+      <p>current_address: {{ result['result']['current_address'] }}</p>
+      <p>permit_no: {{ result['result']['permit_no'] }}</p>
+      <p>status: {{ result['result']['status'] }}</p>
+      <p>is_financed: {{ result['result']['is_financed'] }}</p>
+      <p>noc_details: {{ result['result']['noc_details'] }}</p>
+      <p>father_name: {{ result['result']['father_name'] }}</p>
+      <p>noc_valid_upto: {{ result['result']['noc_valid_upto'] }}</p>
+      <p>registration_date: {{ result['result']['registration_date'] }}</p>
+      <p>colour: {{ result['result']['colour'] }}</p>
+      <p>puc_number: {{ result['result']['puc_number'] }}</p>
+      <p>registered_place: {{ result['result']['registered_place'] }}</p>
+      <p>seating_capacity: {{ result['result']['seating_capacity'] }}</p>
+      <p>mv_tax_upto: {{ result['result']['mv_tax_upto'] }}</p>
+      <p>norms_type: {{ result['result']['norms_type'] }}</p>
+      <p>body_type: {{ result['result']['body_type'] }}</p>
+      <p>owner_serial_number: {{ result['result']['owner_serial_number'] }}</p>
+      <p>wheelbase: {{ result['result']['wheelbase'] }}</p>
+      <p>fitness_upto: {{ result['result']['fitness_upto'] }}</p>
+      <p>financer: {{ result['result']['financer'] }}</p>
+      <p>fuel_type: {{ result['result']['fuel_type'] }}</p>
+      <p>puc_valid_upto: {{ result['result']['puc_valid_upto'] }}</p>
+      <p>status_verification: {{ result['result']['status_verification'] }}</p>
+      <p>npermit_no: {{ result['result']['npermit_no'] }}</p>
+      <p>npermit_upto: {{ result['result']['npermit_upto'] }}</p>
+      <p>manufacturer_model: {{ result['result']['manufacturer_model'] }}</p>
+      <p>permit_issue_date: {{ result['result']['permit_issue_date'] }}</p>
+      <p>state: {{ result['result']['state'] }}</p>
+      <p>cubic_capacity: {{ result['result']['cubic_capacity'] }}</p>
+      <p>vehicle_class: {{ result['result']['vehicle_class'] }}</p>
+      <p>insurance_validity: {{ result['result']['insurance_validity'] }}</p>
+      <p>noc_issue_date: {{ result['result']['noc_issue_date'] }}</p>
+      <p>owner_name: {{ result['result']['owner_name'] }}</p>
+      <p>manufacturer: {{ result['result']['manufacturer'] }}</p>
+      <p>vehicle_category: {{ result['result']['vehicle_category'] }}</p>
+      <p>permanent_address: {{ result['result']['permanent_address'] }}</p>
+      <p>insurance_name: {{ result['result']['insurance_name'] }}</p>
+      <p>owner_mobile_no: {{ result['result']['owner_mobile_no'] }}</p>
+      <p>unladden_weight: {{ result['result']['unladden_weight'] }}</p>
+      <p>chassis_number: {{ result['result']['chassis_number'] }}</p>
+      <p>engine_number: {{ result['result']['engine_number'] }}</p>
+      <p>blacklist_status: {{ result['result']['blacklist_status'] }}</p>
+      <p>permit_validity_upto: {{ result['result']['permit_validity_upto'] }}</p>
+      <p>permit_validity_from: {{ result['result']['permit_validity_from'] }}</p>
+      <p>status_verfy_date: {{ result['result']['status_verfy_date'] }}</p>
+      <p>masked_name: {{ result['result']['masked_name'] }}</p>
+      <p>insurance_policy_no: {{ result['result']['insurance_policy_no'] }}</p>
+      <p>m_y_manufacturing: {{ result['result']['m_y_manufacturing'] }}</p>
+      <p>number_of_cylinder: {{ result['result']['number_of_cylinder'] }}</p>
+      <p>gross_vehicle_weight: {{ result['result']['gross_vehicle_weight'] }}</p>
+      <p>registration_number: {{ result['result']['registration_number'] }}</p>
+      <p>sleeper_capacity: {{ result['result']['sleeper_capacity'] }}</p>
+      <p>standing_capacity: {{ result['result']['standing_capacity'] }}</p>
+      <p>status_message: {{ result['result']['status_message'] }}</p>
+      <p>permit_type: {{ result['result']['permit_type'] }}</p>
+      <p>noc_status: {{ result['result']['noc_status'] }}</p>
+    </div>
+  </body>
+</html>

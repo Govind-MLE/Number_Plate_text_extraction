@@ -1,0 +1,54 @@
+#home_taber .wrapper .insuranceTab ul .cardTab.is_active {
+    background-color: #FFCB09;
+    color: #000;
+}
+#home_taber .wrapper .insuranceTab ul .cardTab {
+    padding: 12px 7px 14px;
+    background-color: #fff;
+    color: #666666;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 16px;
+    width: 96px;
+    height: 120px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-family: Glimer;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+    insuranceTab ul .cardTab {
+        padding: 19px 7px 14px;
+        background-color: #fff;
+        color: #666666;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-radius: 16px;
+        width: 96px;
+        height: 120px;
+        transition: all 0.2s;
+        position: relative;
+        cursor: pointer;
+    }

@@ -1,0 +1,54 @@
+/* CSS for the body element */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    width: 600px;
+    padding: auto;
+  }
+  
+  /* CSS for the h1 and p elements */
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* CSS for the form element */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

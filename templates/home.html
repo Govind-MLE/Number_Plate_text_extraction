@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <style>
+            body{
+                background-image:url("static/images/new-banner-motor (1).jpg");
+                background-size: cover;
+                background-repeat: repeat;
+                background-position: center;
+            }
+        </style>
+        <head>
+            <center>
+            <h1>LEO INSURANCE AGENCIES</h1>
+        </center>
+        </head>
+            <style>
+                nav{
+                    background-color: rgb(181, 173, 199);
+                    color:#fff;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                }
+                nav a{
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 10px;
+                    color: #000;
+                }
+            </style>
+                  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+                </head> 
+                <body>
+                    <nav>
+                        <a href="#"><i class='fa fa-product'></i>Product</a>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Support</a></li>
+                    </nav>
+                    <ul id class="sidebar">
+                        <li data-tabname="bike" data-insurancename="bike" class="cardTab.is_active">
+                            <div class="cardImageholder">
+                                <img loading="lazy" src="static/images/bike.jpg" alt srcset>
+                            </div>
+                            <span> 
+                                Bike <br> Insurance
+                            </span>
+                        </li>
+                        <li data-tabname="car" data-insurancename="car" class="cardTab.is_active">
+                            <div class="cardImageholder">
+                                <img loading="lazy" src="static/images/car.jpg" alt srcset>
+                            </div>
+                            <span> 
+                                Car <br>Insurance
+                            </span>
+                        </li>
+                        <li data-tabname="commerical" data-insurancename="commerical" class="cardTab.is_active">
+                            <div class="cardImageholder">
+                                <img loading="lazy" src="static/images/commerical.jpg" alt srcset>
+                            </div>
+                            <span> 
+                                Commerical <br>Insurance
+                            </span>
+                        </li>
+                        <li data-tabname="car" data-insurancename="car" class="cardTab.is_active">
+                            <div class="cardImageholder">
+                                <img loading="lazy" src="static/images/personal.jpg" alt srcset>
+                            </div>
+                            <span> 
+                                Personal <br>Insurance
+                            </span>
+                        </li>
+                        <li data-tabname="car" data-insurancename="car" class="cardTab.is_active">
+                            <div class="cardImageholder">
+                                <img loading="lazy" src="static/images/home.jpg" alt srcset>
+                            </div>
+                            <span> 
+                                Home <br>Insurance
+                            </span
+<body>
+    <center>
+    <h1>Text Detection</h1>
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+    <form action="{{ url_for('detect_text') }}" method="post" enctype="multipart/form-data">
+        <label for="file">Select an image to detect text:</label>
+        <input type="file" name="file" id="file" accept=".png,.jpg,.jpeg,.gif,.jfif">
+        <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>

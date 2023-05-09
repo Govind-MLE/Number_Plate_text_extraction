@@ -1,0 +1,53 @@
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+  width: 500px;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  resize: none;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #2c8739;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+}
